@@ -1,5 +1,4 @@
-![1](https://user-images.githubusercontent.com/49531926/120366324-cdd2c480-c30f-11eb-848d-8187c1050bea.png)
-![2](https://user-images.githubusercontent.com/49531926/120366359-daefb380-c30f-11eb-9f32-07eaed7e1989.png)
+
 # R_project
 
 1.Moje wybrane produkty:
@@ -103,7 +102,7 @@ mazowieckie$wartosci <-(ost4[[3]][[16]][2]+ost4[[4]][[16]][2]+ost4[[5]][[16]][2]
 Średnie 5 produktów w poszczególnych województwach i ich rosnąca tendencja
  
 
-
+![2](https://user-images.githubusercontent.com/49531926/120366359-daefb380-c30f-11eb-9f32-07eaed7e1989.png)
 
 
 
@@ -112,3 +111,4 @@ mazowieckie$wartosci <-(ost4[[3]][[16]][2]+ost4[[4]][[16]][2]+ost4[[5]][[16]][2]
 
 Jak widzimy średnia cen największa jest w woj. Mazowieckim natomiast najmniejsza średnia cen występuje w woj. Zachodnio-Pomorskim.
  
+![1](https://user-images.githubusercontent.com/49531926/120366324-cdd2c480-c30f-11eb-848d-8187c1050bea.png)
