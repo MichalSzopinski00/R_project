@@ -99,10 +99,10 @@ mazowieckie<-data.frame(year=2006:2019)
 mazowieckie$wartosci <-(ost4[[3]][[16]][2]+ost4[[4]][[16]][2]+ost4[[5]][[16]][2]+ost4[[6]][[16]][2]+ost4[[7]][[16]][2])/5
 
 
-Średnie 5 produktów w poszczególnych województwach i ich rosnąca tendencja
+<h2>Średnie 5 produktów w poszczególnych województwach i ich rosnąca tendencja</h2>
 
 ![1](https://user-images.githubusercontent.com/49531926/120366324-cdd2c480-c30f-11eb-848d-8187c1050bea.png)
 
-Jak widzimy średnia cen największa jest w woj. Mazowieckim natomiast najmniejsza średnia cen występuje w woj. Zachodnio-Pomorskim.
+<h2>Jak widzimy średnia cen największa jest w woj. Mazowieckim natomiast najmniejsza średnia cen występuje w woj. Zachodnio-Pomorskim.</h2>
  
 ![2](https://user-images.githubusercontent.com/49531926/120366359-daefb380-c30f-11eb-9f32-07eaed7e1989.png)
