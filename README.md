@@ -1,3 +1,5 @@
+![1](https://user-images.githubusercontent.com/49531926/120366324-cdd2c480-c30f-11eb-848d-8187c1050bea.png)
+![2](https://user-images.githubusercontent.com/49531926/120366359-daefb380-c30f-11eb-9f32-07eaed7e1989.png)
 # R_project
 
 1.Moje wybrane produkty:
