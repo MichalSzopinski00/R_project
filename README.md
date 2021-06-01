@@ -7,6 +7,7 @@
 4)	Piwo
 5)	Czekolada
 2.Podczas pracy korzystałem z takich bibliotek
+
 install.packages("httr")
 install.packages("rjson")
 install.packages("xml2")
@@ -16,6 +17,7 @@ library(httr)
 library(rjson)
 library(xml2)
 library(jsonlite)
+
 3.Dokonałem połączenia Po API i pobrałem potrzebne dane z GUSU
 apiKey <- "1A6B2AB1-0DF0-4DAC-74A3-07D7C07FC3BE"
 result <- GET("https://bdl.stat.gov.pl/api/v1/data/by-variable/3643?",
@@ -49,13 +51,19 @@ jeansy_1 <- "https://bdl.stat.gov.pl/api/v1/data/by-variable/387391?unit-level=2
 ramka <- fromJSON(jeansy_1)
 jeansy_1<-as.data.frame(ramka[6])
 4. moje problemy podczas tworzenia projektu. 
-	Podczas importu danych przez API jeansy z GUSU były podzielone jako 2 produkty jeden gdzie dane były od (2006-2017) i drugi gdzie dane były od (2018-2019). Problem polegał na mergowaniu tych dwóch dataframe’ow i zgranie,poradziłem sobie z tym problemem i zrobiłem to w pętli:
+
+
+Podczas importu danych przez API jeansy z GUSU były podzielone jako 2 produkty jeden gdzie dane były od (2006-2017) i drugi gdzie dane były od (2018-2019). Problem polegał na mergowaniu tych dwóch dataframe’ow i zgranie,poradziłem sobie z tym problemem i zrobiłem to w pętli:
 x<-0
 while(x<=15){
 x<-x+1
 jeansy_full2[[3]][[x]] <- rbind(jeansy_1[[3]][[x]], jeansy_2[[3]][[x]])
 }
-	Kolejny problem był z obliczeniem średniej i utworzenie osobnych 16 dataframe’ow dla każdego z województw
+
+
+Kolejny problem był z obliczeniem średniej i utworzenie osobnych 16 dataframe’ow dla każdego z województw
+
+
 malopolska<-data.frame(year=2006:2019)
 malopolska$wartosci<-(ost4[[3]][[1]][2]+ost4[[4]][[1]][2]+ost4[[5]][[1]][2]+ost4[[6]][[1]][2]+ost4[[7]][[1]][2])/5
 slaskie<-data.frame(year=2006:2019)
